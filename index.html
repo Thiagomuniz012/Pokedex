@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/poke.css">
+    <title>Pokédex</title>
+</head>
+
+<body>
+    <div id="pokedex">
+        <div id="container">
+            <img src="imagens/pngkit_gameboy-png_1470576j.png" alt="" id="abrir" onclick="iniciar()">
+                <div id="visor"></div>
+            <form id="form">
+                <input type="search" id="input_search" placeholder="Name or Number" required />
+                <input type="submit" id="input_submit" value="">
+            </form>
+            <div class="container-botao">
+                <div class="row">
+                  <button class="botaomenu borda-cima-esq" onclick="pokeTipo()">TYPE</button>
+                  <button class="botaomenu" onclick="pokeHabilidade()">ABILITY</button>
+                  <button class="botaomenu" onclick="pokeShiny()">SHINY</button>
+                  <button class="botaomenu" onclick="pokePeso()">WEIGHT</button>
+                  <button class="botaomenu borda-cima-dir" onclick="pokeAltura()">HEIGHT</button>
+                </div>
+                <div class="row">
+                  <button class="botaomenu borda-baixo-esq" onclick="estadoPadrao()"></button>
+                  <button class="botaomenu" onclick="estadoPadrao()"></button>
+                  <button class="botaomenu" onclick="estadoPadrao()"></button>
+                  <button class="botaomenu" onclick="estadoPadrao()"></button>
+                  <button class="botaomenu borda-baixo-dir" onclick="estadoPadrao()"></button>
+                </div>
+               </div>
+            <button id="fechar_pokedex" onclick="closePoke()"></button>
+            <img src="#" alt="" id="gif">
+            <img src="#" alt="" id="gif2">
+            <img src="imagens/Pokédex.png" alt="" id="img-pokedex">
+            <div class="buttons">
+                <button class="botao btn-anterior">&lt;Prev</button>
+                <button class="botao btn-proximo">Next &gt;</button>
+            </div>
+            <h1 class="pokemon-data">
+                <span id="pokemon-id"></span> -
+                <span id="pokemon-name"></span>
+                <span id="pokemon-specs" class="specs"></span>
+                <span id="pokemon-specs2" class="specs"></span>
+                <span id="pokemon-specs3" class="specs"></span>
+                <span id="pokemon-specs4" class="specs"></span>
+                <span id="pokemon-specs5" class="specs"></span>
+            </h1>
+    </div>
+    <script src="js/poke.js"></script>
+</body>
+
+</html>
